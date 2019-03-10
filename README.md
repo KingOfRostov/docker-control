@@ -1,7 +1,15 @@
 # USAGE
 1)Replace your nginx.conf file and html folder
 
-2)Python version : 3.7.2 
+2)Run server.py file
+
+3)Run nginx 
+
+4)Open http://localhost:8080/ in your browser.
+
+# DEPENDENCIES
+
+  Python version : 3.7.2 
 
   Libs:
   
@@ -9,6 +17,3 @@
     
     Docker version : 3.7.0
     
-3)Run server.py file
-
-4)Run nginx 
