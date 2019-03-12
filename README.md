@@ -1,7 +1,7 @@
 # USAGE
 1)Replace your nginx.conf file and html folder
 
-2)Run server.py file
+2)Run server.py file. If you'd like to change the listening port use this template : "python server.py port_number", Where port_number is the number of desired port. By default it's 8000.
 
 3)Run nginx 
 
