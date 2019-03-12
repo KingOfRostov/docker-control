@@ -17,8 +17,7 @@ def delete_container(name):
             container.stop()
             container.remove()
             return get_info()
-    else:
-        return("Invalid request. There is no container with name : " + name)
+    return("Invalid request. There is no container with name : " + name)
 
 
 # Stops running container by its name
@@ -29,8 +28,7 @@ def stop_container(name):
             container = client.containers.get(name)
             container.stop()
             return get_info()
-    else:
-        return("Invalid request. There is no container with name : " + name)
+    return("Invalid request. There is no container with name : " + name)
 
 
 # Starts existing container, for instance : with status "Exited"
@@ -40,8 +38,7 @@ def start_container(name):
         if name in i.name:
             client.api.start(name)
             return get_info()
-    else:
-        return("Invalid request. There is no container with name : " + name)
+    return("Invalid request. There is no container with name : " + name)
 
 
 # Runs a container inside chosen image
@@ -51,8 +48,7 @@ def run_container(image):
         if image in str(i):
             client.containers.run(image, detach=True)
             return get_info()
-    else:
-        return("Invalid request. There is no image with name : " + image)
+    return("Invalid request. There is no image with name : " + image)
 
 
 # Returns the names of existing containers and their statuses
